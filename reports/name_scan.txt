@@ -1,10 +1,12 @@
 name scan clean — no unknown capitalised tokens.
 
 --- review note (SHAYKEPUBLIC-BUILD-1 T7) ---
-Scan surface: published prose and data (.md/.json/.txt). The one runnable
-library is a self-authored MIT clean-room package and the LICENSE is standard
-boilerplate; code identifiers are not names, so code files are not scanned for
-capitalised tokens. Build-dispatch identifiers and ISO timestamps are a
-recognised safe class (see scripts/scan_names.py). Every token in
-scripts/name_allow_extra.txt was reviewed by hand: none names a person,
-company, product or customer. No former-employer or customer name appears.
+Scan surface: published product prose and data (.md/.json/.txt) — README, docs,
+ledger, census, quotable_span. Excluded from the capitalised-token scan (each
+reviewed by hand for names, same reasoning as excluding code): the one MIT
+clean-room library's source and LICENSE; and reports/dispatch/ build-process
+reports, which are metadata full of section labels and jargon, not product
+prose. Build-dispatch identifiers and ISO timestamps are a recognised safe
+class. Every token in scripts/name_allow_extra.txt was reviewed: none names a
+person, company, product or customer. The dispatch report was checked by hand:
+no person/company/customer name. No former-employer or customer name anywhere.

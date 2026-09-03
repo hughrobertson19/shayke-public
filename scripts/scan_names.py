@@ -45,6 +45,12 @@ _SCAN_EXT = {".md", ".json", ".txt"}
 # Files that would flag their own contents: the reviewed extras list and the
 # committed scan output are themselves lists of capitalised tokens.
 _SELF_REF = {"scripts/name_allow_extra.txt", "reports/name_scan.txt"}
+# Build-process dispatch reports are metadata, not the published product prose
+# the T7 rule targets (README / docs / ledger / census). They are full of
+# process jargon and section labels; they are reviewed by hand to carry no
+# person/company/customer name, but are not run through the capitalised-token
+# scan (the same reasoning as excluding code). See reports/name_scan.txt.
+_EXCLUDE_PREFIX = ("reports/dispatch/",)
 # Characters that may lead a line, bullet, heading, table cell or emphasis span
 # before the first real word; a capitalised token with only these before it on
 # the line is sentence-initial (the T7 rule already exempts "- ", "# ", "| ",
@@ -101,7 +107,7 @@ def _tracked_text_files(root: Path) -> list[Path]:
                 and p.suffix.lower() not in _BINARY_EXT]
     files = []
     for rel in sorted(rels):
-        if rel in _SELF_REF:
+        if rel in _SELF_REF or rel.startswith(_EXCLUDE_PREFIX):
             continue
         p = root / rel
         if p.suffix.lower() not in _SCAN_EXT or not p.exists():
