@@ -1,0 +1,17 @@
+{
+  "date": "2026-07-31",
+  "source": "backfill",
+  "dispatches": [],
+  "corrections": [
+    {
+      "id": "2026-07-31-external",
+      "date": "2026-07-31",
+      "class": "chat-provenance-as-repo",
+      "settled": true,
+      "title": "a re-dated external story shipped as fact, then caught"
+    }
+  ],
+  "notes": [],
+  "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "hash": "e26dba23548621484ceb1211cad8906cdf5825153547780d32f5aa953c0db5fb"
+}

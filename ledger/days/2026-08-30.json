@@ -1,0 +1,114 @@
+{
+  "date": "2026-08-30",
+  "source": "backfill",
+  "dispatches": [
+    {
+      "id": "PEAKOPS-APIGAP-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "190a8cc93f094d8ad1ba043f5da3091e3dbf6346",
+      "landed_at": "2026-08-30T18:49:34-05:00",
+      "tests": {
+        "passed": 5498,
+        "failed": 0,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-F6-WIRE-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "190a8cc93f094d8ad1ba043f5da3091e3dbf6346",
+      "landed_at": "2026-08-30T18:49:34-05:00",
+      "tests": {
+        "passed": 5508,
+        "failed": 0,
+        "skipped": 5,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-FEED-HANDOFF-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "b4c184d7b820f84fd296fb62edff64105b1a6467",
+      "landed_at": "2026-08-30T23:30:35-05:00",
+      "tests": {
+        "passed": 5530,
+        "failed": 0,
+        "skipped": 5,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-REDSUITE-RCA-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "190a8cc93f094d8ad1ba043f5da3091e3dbf6346",
+      "landed_at": "2026-08-30T18:49:34-05:00",
+      "tests": {
+        "passed": 5484,
+        "failed": 3,
+        "skipped": 5,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-TELEGRAM-NOTIFY-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "de34eb706228bb4b7e34337d368f23991f89183a",
+      "landed_at": "2026-08-30T21:00:32-05:00",
+      "tests": {
+        "passed": 5522,
+        "failed": 0,
+        "skipped": 5,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-VIEWER-VOLATILE-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "190a8cc93f094d8ad1ba043f5da3091e3dbf6346",
+      "landed_at": "2026-08-30T18:49:34-05:00",
+      "tests": {
+        "passed": 20,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    }
+  ],
+  "corrections": [],
+  "notes": [
+    "tokens_in/tokens_out/cost_usd are null: no per-dispatch telemetry is captured on this machine; never estimated."
+  ],
+  "prev_hash": "aa16a5155805e5edf1fbfed2458ef15930f06468afc8066a38628076552bb5e4",
+  "hash": "5d08379e9f876cee287d69dcf0cdc958dd6af23870ed446d62b41e2337f9521c"
+}

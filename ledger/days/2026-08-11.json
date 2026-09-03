@@ -1,0 +1,27 @@
+{
+  "date": "2026-08-11",
+  "source": "backfill",
+  "dispatches": [
+    {
+      "id": "PEAKOPS-OUTCOME-EMIT-1",
+      "repo": "peak-ops",
+      "status": "DEAD_NO_REPORT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    }
+  ],
+  "corrections": [],
+  "notes": [],
+  "prev_hash": "97f950f6c887541538683797bef2595e39a1f194f278b36253ebd7db280847dc",
+  "hash": "622abf32ab718b1131805767aff51ad846e2fc2d77795c492c6f411045da0423"
+}

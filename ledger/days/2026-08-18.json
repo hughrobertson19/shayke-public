@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-18",
+  "source": "backfill",
+  "dispatches": [
+    {
+      "id": "AIHUGH-OVERNIGHT-HEAVY-1",
+      "repo": "ai-hugh",
+      "status": "DEAD_NO_REPORT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-OVERNIGHT-REGISTRY-SCORING-1",
+      "repo": "peak-ops",
+      "status": "DEAD_NO_REPORT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    }
+  ],
+  "corrections": [],
+  "notes": [],
+  "prev_hash": "ac081875e34ca449cd71554e844fdd2a9497015c9ff9d3324ccbc0807a11f4f4",
+  "hash": "b0cad3989aa37d7b78f86d813872e809d826fed1f30b96237ff5342a5c5bbca2"
+}

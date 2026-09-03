@@ -1,0 +1,148 @@
+{
+  "date": "2026-09-01",
+  "source": "backfill",
+  "dispatches": [
+    {
+      "id": "AIHUGH-DISPATCH-HOOKS-FIX-1",
+      "repo": "ai-hugh",
+      "status": "LANDED",
+      "landed_commit": "567265a824a48924a82e77277629343e7ce3ab9f",
+      "landed_at": "2026-09-01T21:50:08-05:00",
+      "tests": {
+        "passed": 23,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "AIHUGH-MERGE-CONTACT-ROLES-1",
+      "repo": "ai-hugh",
+      "status": "LANDED",
+      "landed_commit": "e8d8f7700e1923cdacf56527f9be9a3ff52dc072",
+      "landed_at": "2026-09-01T22:05:38-05:00",
+      "tests": {
+        "passed": 10308,
+        "failed": 0,
+        "skipped": 21,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "AIHUGH-SALESFORCE-MULTITHREAD-CONTACT-ROLES-1",
+      "repo": "ai-hugh",
+      "status": "LANDED",
+      "landed_commit": "d3877b0a11a3da55b7351a8bc1ed82f93af59f1a",
+      "landed_at": "2026-09-01T21:01:31-05:00",
+      "tests": {
+        "passed": 10307,
+        "failed": 1,
+        "skipped": 21,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-ARCHITECT-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "62abfe2789f9ec2be058c1637e446f79de4348f7",
+      "landed_at": "2026-09-01T17:17:49-05:00",
+      "tests": {
+        "passed": 5626,
+        "failed": 0,
+        "skipped": 5,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-ENGHEAD-SEQ-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "6e3dc7112c2222c3fc5504c1a61b3f5c3076c2c9",
+      "landed_at": "2026-09-01T14:23:20-05:00",
+      "tests": {
+        "passed": 5592,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-HYGIENE-2",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "f1e2fd70f160b051b3e73bf5f5c1de984b5533da",
+      "landed_at": "2026-09-01T23:23:16-05:00",
+      "tests": {
+        "passed": 22,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-OPS-REVIVE-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "876ec4065164b8088137b3b109a0768a1e0b21a1",
+      "landed_at": "2026-09-01T09:16:23-05:00",
+      "tests": {
+        "passed": 16,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-RANKING-POLICY-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "262aab19053998fad77f7f960076b5d8ff144dc6",
+      "landed_at": "2026-09-01T11:35:16-05:00",
+      "tests": {
+        "passed": 5576,
+        "failed": 0,
+        "skipped": 5,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    }
+  ],
+  "corrections": [],
+  "notes": [
+    "tokens_in/tokens_out/cost_usd are null: no per-dispatch telemetry is captured on this machine; never estimated."
+  ],
+  "prev_hash": "3b37637311ca93097c8456f5174559c17f9accb0b29765ffdcd4fd907149ef60",
+  "hash": "5a867c8f62f1df977967d1dfae76306ba740cef39cf38b2f1e9b782f425370c7"
+}

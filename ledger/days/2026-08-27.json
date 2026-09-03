@@ -1,0 +1,24 @@
+{
+  "date": "2026-08-27",
+  "source": "backfill",
+  "dispatches": [],
+  "corrections": [
+    {
+      "id": "2026-08-27-deadlock",
+      "date": "2026-08-27",
+      "class": "mechanism-from-narrative",
+      "settled": true,
+      "title": "a guard deadlock called unbounded when a backstop caps it"
+    },
+    {
+      "id": "2026-08-27-mechanism",
+      "date": "2026-08-27",
+      "class": "mechanism-from-narrative",
+      "settled": true,
+      "title": "a mechanism asserted from narrative fit, not from the code"
+    }
+  ],
+  "notes": [],
+  "prev_hash": "38887607a7315efcc93fa9bcf964d6bb1c8c90d0febcd4407e4bccb13ceb7ded",
+  "hash": "aa16a5155805e5edf1fbfed2458ef15930f06468afc8066a38628076552bb5e4"
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-08-25",
+  "source": "backfill",
+  "dispatches": [],
+  "corrections": [
+    {
+      "id": "2026-08-25-frozen",
+      "date": "2026-08-25",
+      "class": "metric-drift",
+      "settled": true,
+      "title": "a frozen figure lifted once the number was remeasured"
+    }
+  ],
+  "notes": [],
+  "prev_hash": "8cda33fcfbb08f2bcd712147cbcb52bffbce98ea87ffc3783c278246fbd07bcd",
+  "hash": "38887607a7315efcc93fa9bcf964d6bb1c8c90d0febcd4407e4bccb13ceb7ded"
+}

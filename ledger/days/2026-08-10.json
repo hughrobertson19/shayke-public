@@ -1,0 +1,27 @@
+{
+  "date": "2026-08-10",
+  "source": "backfill",
+  "dispatches": [
+    {
+      "id": "AIHUGH-PLAY-ANALYZER-1",
+      "repo": "ai-hugh",
+      "status": "DEAD_NO_REPORT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    }
+  ],
+  "corrections": [],
+  "notes": [],
+  "prev_hash": "79e60aa28398cfa015fe1078e386558599f952264ea625afdcc8e31956d62749",
+  "hash": "97f950f6c887541538683797bef2595e39a1f194f278b36253ebd7db280847dc"
+}

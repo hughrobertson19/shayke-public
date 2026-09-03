@@ -1,0 +1,344 @@
+{
+  "generated_at": "2026-09-03T19:16:11.980805+00:00",
+  "fleet_paused": true,
+  "registered_count": 42,
+  "running_count": 0,
+  "agents": [
+    {
+      "name": "ai_rd",
+      "department": "operations",
+      "tier": "claude-sonnet-5",
+      "cadence": "weekly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "architect",
+      "department": "engineering",
+      "tier": "claude-opus-4-8",
+      "cadence": "on_demand",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "build_agent",
+      "department": "engineering",
+      "tier": "claude-opus-4-8",
+      "cadence": "daily",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "capability_scout",
+      "department": "operations",
+      "tier": "claude-sonnet-5",
+      "cadence": "twice_weekly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "cfo",
+      "department": "operations",
+      "tier": "claude-sonnet-5",
+      "cadence": "weekly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "comp-refresh",
+      "department": "intelligence",
+      "tier": "claude-sonnet-5",
+      "cadence": "monthly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "competitive_intel",
+      "department": "intelligence",
+      "tier": "claude-sonnet-5",
+      "cadence": "daily",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "competitive_watcher",
+      "department": "intelligence",
+      "tier": "claude-haiku-4-5",
+      "cadence": "daily",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "compliance",
+      "department": "legal",
+      "tier": "claude-sonnet-5",
+      "cadence": "monthly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "coo",
+      "department": "executive",
+      "tier": "claude-sonnet-5",
+      "cadence": "weekly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "decision_triage",
+      "department": "engineering",
+      "tier": "claude-haiku-4-5",
+      "cadence": "daily",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "docs",
+      "department": "engineering",
+      "tier": "claude-sonnet-5",
+      "cadence": "weekly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "drift_sentinel",
+      "department": "engineering",
+      "tier": "claude-haiku-4-5",
+      "cadence": "weekly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "eng_head",
+      "department": "engineering",
+      "tier": "claude-sonnet-5",
+      "cadence": "on_demand",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "env_orchestration",
+      "department": "operations",
+      "tier": "claude-haiku-4-5",
+      "cadence": "on_demand",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "eval_sdr",
+      "department": "engineering",
+      "tier": "claude-sonnet-5",
+      "cadence": "post_build",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "finance",
+      "department": "operations",
+      "tier": "claude-sonnet-5",
+      "cadence": "monthly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "fleet_dev_manager",
+      "department": "engineering",
+      "tier": "claude-sonnet-5",
+      "cadence": "on_demand",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "gamification_loop",
+      "department": "engineering",
+      "tier": "claude-sonnet-5",
+      "cadence": "weekly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "gtm_head",
+      "department": "revenue",
+      "tier": "claude-sonnet-5",
+      "cadence": "on_demand",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "gtm_research",
+      "department": "revenue",
+      "tier": "claude-sonnet-5",
+      "cadence": "weekly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "integration_builder",
+      "department": "engineering",
+      "tier": "claude-sonnet-5",
+      "cadence": "on_demand",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "integration_scout",
+      "department": "engineering",
+      "tier": "claude-sonnet-5",
+      "cadence": "on_demand",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "integrations_health",
+      "department": "engineering",
+      "tier": "claude-sonnet-5",
+      "cadence": "weekly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "intel_scout",
+      "department": "intelligence",
+      "tier": "claude-sonnet-5",
+      "cadence": "daily",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "ip_monitor",
+      "department": "legal",
+      "tier": "claude-haiku-4-5",
+      "cadence": "weekly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "legal_clock_tracker",
+      "department": "trust",
+      "tier": "claude-haiku-4-5",
+      "cadence": "daily",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "legal_head",
+      "department": "legal",
+      "tier": "claude-sonnet-5",
+      "cadence": "on_demand",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "market_research",
+      "department": "marketing",
+      "tier": "claude-sonnet-5",
+      "cadence": "monthly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "marketing",
+      "department": "marketing",
+      "tier": "claude-sonnet-5",
+      "cadence": "weekly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "network",
+      "department": "revenue",
+      "tier": "claude-sonnet-5",
+      "cadence": "weekly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "ops_head",
+      "department": "operations",
+      "tier": "claude-sonnet-5",
+      "cadence": "on_demand",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "outbound",
+      "department": "revenue",
+      "tier": "claude-sonnet-5",
+      "cadence": "daily",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "pa",
+      "department": "executive",
+      "tier": "claude-opus-4-8",
+      "cadence": "on_demand",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "prospect_research",
+      "department": "revenue",
+      "tier": "claude-sonnet-5",
+      "cadence": "weekly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "qa",
+      "department": "engineering",
+      "tier": "claude-sonnet-5",
+      "cadence": "daily",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "research_head",
+      "department": "research",
+      "tier": "claude-sonnet-5",
+      "cadence": "weekly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "scheduling",
+      "department": "operations",
+      "tier": "claude-sonnet-5",
+      "cadence": "on_demand",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "sec_head",
+      "department": "trust",
+      "tier": "claude-sonnet-5",
+      "cadence": "on_demand",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "security",
+      "department": "security",
+      "tier": "claude-sonnet-5",
+      "cadence": "weekly",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "state_briefing",
+      "department": "engineering",
+      "tier": "claude-haiku-4-5",
+      "cadence": "post_build",
+      "registered": true,
+      "running": false
+    },
+    {
+      "name": "test_session_processor",
+      "department": "product",
+      "tier": "claude-sonnet-5",
+      "cadence": "on_demand",
+      "registered": true,
+      "running": false
+    }
+  ]
+}

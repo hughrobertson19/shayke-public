@@ -1,0 +1,114 @@
+{
+  "date": "2026-08-31",
+  "source": "backfill",
+  "dispatches": [
+    {
+      "id": "JUDGE-WHITESPACE-VOID-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "8d4a4072655512b00a417f83391a75bb4bb9ccd8",
+      "landed_at": "2026-08-31T13:28:09-05:00",
+      "tests": {
+        "passed": 5,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-COO-RETIRE-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "1cf31dd0b6a958e1f98815cc840ac099da85cb91",
+      "landed_at": "2026-08-31T21:31:19-05:00",
+      "tests": {
+        "passed": 7,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-PROVENANCE-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "5e20e08fd87fb23945b9ddfe823ae97ff9cd171d",
+      "landed_at": "2026-08-31T10:40:56-05:00",
+      "tests": {
+        "passed": 5498,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-SELFIMPROVE-AUDIT-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "187059262bce730cb44c2f57bc4d18aca8ef104d",
+      "landed_at": "2026-08-31T13:51:10-05:00",
+      "tests": {
+        "passed": 19,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-VIEWER-FRESH-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "1cd35018fcc3771f7d88705aa8c800858c2a1d0a",
+      "landed_at": "2026-08-31T22:28:42-05:00",
+      "tests": {
+        "passed": 5,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-VIEWER-V3-PHASE0",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "fcca7397ed3250b640bbec3d5e7ae14999cef002",
+      "landed_at": "2026-08-31T17:52:05-05:00",
+      "tests": {
+        "passed": 20,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    }
+  ],
+  "corrections": [],
+  "notes": [
+    "tokens_in/tokens_out/cost_usd are null: no per-dispatch telemetry is captured on this machine; never estimated."
+  ],
+  "prev_hash": "5d08379e9f876cee287d69dcf0cdc958dd6af23870ed446d62b41e2337f9521c",
+  "hash": "3b37637311ca93097c8456f5174559c17f9accb0b29765ffdcd4fd907149ef60"
+}

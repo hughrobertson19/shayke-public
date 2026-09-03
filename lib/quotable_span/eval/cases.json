@@ -1,0 +1,165 @@
+{
+  "_about": "invented cases only. no real companies, people, products, prices or dates. each case: id, graded, judge_output (the raw dict a judge would return, passed through the adapter), expected status. strict defaults true; set strict=false for the whitespace-lax cases. comment explains the point of the case.",
+  "cases": [
+    {
+      "id": "c01_exact_match",
+      "graded": "the invoice was sent early and paid in full.",
+      "judge_output": {"label": "pass", "quotes": ["paid in full"]},
+      "strict": true,
+      "expected": "VALID",
+      "comment": "the plain case: the quote is an exact substring."
+    },
+    {
+      "id": "c02_case_difference_strict",
+      "graded": "the order shipped on time.",
+      "judge_output": {"label": "pass", "quotes": ["shipped ON time"]},
+      "strict": true,
+      "expected": "VOID",
+      "comment": "case counts under strict: an upper-case letter is not its lower-case form."
+    },
+    {
+      "id": "c03_punctuation_difference_strict",
+      "graded": "the box arrived, and the seal was intact.",
+      "judge_output": {"label": "pass", "quotes": ["arrived and the seal"]},
+      "strict": true,
+      "expected": "VOID",
+      "comment": "the graded text has a comma the quote dropped."
+    },
+    {
+      "id": "c04_whitespace_difference_strict",
+      "graded": "there were two  spaces between these words.",
+      "judge_output": {"label": "pass", "quotes": ["two spaces between"]},
+      "strict": true,
+      "expected": "VOID",
+      "comment": "graded has a double space; the single-space quote is not a verbatim substring."
+    },
+    {
+      "id": "c05_whitespace_difference_lax",
+      "graded": "there were two  spaces between these words.",
+      "judge_output": {"label": "pass", "quotes": ["two spaces between"]},
+      "strict": false,
+      "expected": "VALID",
+      "comment": "same pair as c04 but lax collapses whitespace, so it now matches."
+    },
+    {
+      "id": "c06_line_break_span_exact",
+      "graded": "the total was carried\nover to the next page.",
+      "judge_output": {"label": "pass", "quotes": ["carried\nover"]},
+      "strict": true,
+      "expected": "VALID",
+      "comment": "a quote may span a line break if it reproduces the newline exactly."
+    },
+    {
+      "id": "c07_line_break_collapsed_lax",
+      "graded": "the total was carried\nover to the next page.",
+      "judge_output": {"label": "pass", "quotes": ["carried over"]},
+      "strict": false,
+      "expected": "VALID",
+      "comment": "under lax the newline collapses to a space, so a space-joined quote matches."
+    },
+    {
+      "id": "c08_multiple_quotes_all_present",
+      "graded": "the refund was approved and the ticket was closed the same day.",
+      "judge_output": {"label": "pass", "quotes": ["refund was approved", "ticket was closed"]},
+      "strict": true,
+      "expected": "VALID",
+      "comment": "every quote must be found; both are."
+    },
+    {
+      "id": "c09_multiple_quotes_one_missing",
+      "graded": "the refund was approved and the ticket was closed the same day.",
+      "judge_output": {"label": "pass", "quotes": ["refund was approved", "ticket was escalated"]},
+      "strict": true,
+      "expected": "VOID",
+      "comment": "one real quote does not rescue an invented second quote."
+    },
+    {
+      "id": "c10_empty_quotes",
+      "graded": "the shipment left the warehouse before noon.",
+      "judge_output": {"label": "pass", "quotes": []},
+      "strict": true,
+      "expected": "VOID",
+      "comment": "a verdict that quotes nothing has proven nothing."
+    },
+    {
+      "id": "c11_malformed_missing_quotes_field",
+      "graded": "the shipment left the warehouse before noon.",
+      "judge_output": {"label": "pass"},
+      "strict": true,
+      "expected": "VOID",
+      "comment": "malformed judge output: the quotes field is absent."
+    },
+    {
+      "id": "c12_malformed_not_a_mapping",
+      "graded": "the shipment left the warehouse before noon.",
+      "judge_output": ["pass", "left the warehouse"],
+      "strict": true,
+      "expected": "VOID",
+      "comment": "malformed judge output: a list where a mapping was required."
+    },
+    {
+      "id": "c13_malformed_quotes_wrong_type",
+      "graded": "the shipment left the warehouse before noon.",
+      "judge_output": {"label": "pass", "quotes": "left the warehouse"},
+      "strict": true,
+      "expected": "VOID",
+      "comment": "malformed judge output: quotes is a bare string, not a list of strings."
+    },
+    {
+      "id": "c14_malformed_missing_label",
+      "graded": "the shipment left the warehouse before noon.",
+      "judge_output": {"quotes": ["left the warehouse"]},
+      "strict": true,
+      "expected": "VOID",
+      "comment": "malformed judge output: the label field is absent."
+    },
+    {
+      "id": "c15_real_but_irrelevant_quote",
+      "graded": "the refund was approved. the sky was clear that afternoon.",
+      "judge_output": {"label": "refund denied", "quotes": ["the sky was clear that afternoon"]},
+      "strict": true,
+      "expected": "VALID",
+      "comment": "this is the limit of the tool. the quote is a real substring, so the check passes, even though it does not support the 'refund denied' label at all. quotable_span proves the quote is real, never that it is relevant."
+    },
+    {
+      "id": "c16_tab_vs_space_lax",
+      "graded": "column one\tcolumn two were tab separated.",
+      "judge_output": {"label": "pass", "quotes": ["column one column two"]},
+      "strict": false,
+      "expected": "VALID",
+      "comment": "a tab is whitespace; under lax it collapses to a single space and the quote matches."
+    },
+    {
+      "id": "c17_substring_midword",
+      "graded": "the outcome was unhappiness for everyone involved.",
+      "judge_output": {"label": "pass", "quotes": ["happ"]},
+      "strict": true,
+      "expected": "VALID",
+      "comment": "the check is pure substring, not word boundary: 'happ' inside 'unhappiness' passes. a known sharp edge, kept honest."
+    },
+    {
+      "id": "c18_case_lax_still_void",
+      "graded": "the balance was marked total due.",
+      "judge_output": {"label": "pass", "quotes": ["TOTAL DUE"]},
+      "strict": false,
+      "expected": "VOID",
+      "comment": "lax touches whitespace only; case still counts, so this stays void."
+    },
+    {
+      "id": "c19_punctuation_lax_still_void",
+      "graded": "the task was marked done!",
+      "judge_output": {"label": "pass", "quotes": ["done."]},
+      "strict": false,
+      "expected": "VOID",
+      "comment": "the graded text ends with '!'; a quote ending in '.' never matches, in either mode."
+    },
+    {
+      "id": "c20_empty_graded_text",
+      "graded": "",
+      "judge_output": {"label": "pass", "quotes": ["anything at all"]},
+      "strict": true,
+      "expected": "VOID",
+      "comment": "nothing was graded, so no quote can be found."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-08-03",
+  "source": "backfill",
+  "dispatches": [],
+  "corrections": [
+    {
+      "id": "2026-08-03-drafts",
+      "date": "2026-08-03",
+      "class": "metric-drift",
+      "settled": true,
+      "title": "a staged-draft count reprinted unchecked for weeks of briefings"
+    },
+    {
+      "id": "2026-08-03-golden",
+      "date": "2026-08-03",
+      "class": "metric-drift",
+      "settled": true,
+      "title": "a harness case count the docs disagreed on"
+    }
+  ],
+  "notes": [],
+  "prev_hash": "e26dba23548621484ceb1211cad8906cdf5825153547780d32f5aa953c0db5fb",
+  "hash": "79e60aa28398cfa015fe1078e386558599f952264ea625afdcc8e31956d62749"
+}

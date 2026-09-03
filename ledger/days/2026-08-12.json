@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-12",
+  "source": "backfill",
+  "dispatches": [
+    {
+      "id": "AIHUGH-INTEGRATIONS-DEPTH-1",
+      "repo": "ai-hugh",
+      "status": "DEAD_NO_REPORT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "AIHUGH-NOTIFICATION-SOUND-1",
+      "repo": "ai-hugh",
+      "status": "DEAD_NO_REPORT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "AIHUGH-READINESS-P0-1",
+      "repo": "ai-hugh",
+      "status": "DEAD_NO_REPORT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "AIHUGH-SEGFAULT-ISOLATE-1",
+      "repo": "ai-hugh",
+      "status": "DEAD_NO_REPORT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "AIHUGH-XP-TRUTH-1",
+      "repo": "ai-hugh",
+      "status": "DEAD_NO_REPORT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-FINISH-1",
+      "repo": "peak-ops",
+      "status": "DEAD_NO_REPORT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    }
+  ],
+  "corrections": [],
+  "notes": [],
+  "prev_hash": "622abf32ab718b1131805767aff51ad846e2fc2d77795c492c6f411045da0423",
+  "hash": "e0f1751a5d56cf0c26d93f18db58fbd914e635702e88fe1df647636d9d3025d6"
+}

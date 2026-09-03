@@ -1,0 +1,17 @@
+{
+  "date": "2026-08-20",
+  "source": "backfill",
+  "dispatches": [],
+  "corrections": [
+    {
+      "id": "2026-08-20-encryption",
+      "date": "2026-08-20",
+      "class": "stale-assumption",
+      "settled": true,
+      "title": "an encryption description left stale after a fallback was removed"
+    }
+  ],
+  "notes": [],
+  "prev_hash": "b0cad3989aa37d7b78f86d813872e809d826fed1f30b96237ff5342a5c5bbca2",
+  "hash": "27560414aef505da38e8a2c26f81ba6ca9d3c1c181b4d83f5cbb17d015b23077"
+}

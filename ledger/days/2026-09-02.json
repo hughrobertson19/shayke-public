@@ -1,0 +1,114 @@
+{
+  "date": "2026-09-02",
+  "source": "backfill",
+  "dispatches": [
+    {
+      "id": "AIHUGH-BASELINE-REFRESH-1",
+      "repo": "ai-hugh",
+      "status": "LANDED",
+      "landed_commit": "28f9f41d09c660cb3de07722e2cdee55331c8aa9",
+      "landed_at": "2026-09-02T23:04:06-05:00",
+      "tests": {
+        "passed": 45,
+        "failed": 0,
+        "skipped": 2,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-AGENT-PIPELINE-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "68e1b42fcf374132c67c0ae8cab89b1ccfa82d3b",
+      "landed_at": "2026-09-02T11:57:41-05:00",
+      "tests": {
+        "passed": 5666,
+        "failed": 0,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-ARCHITECT-2",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "fd74f43a69cb1b14697415fcd2f6fff7f829eebb",
+      "landed_at": "2026-09-02T02:52:49-05:00",
+      "tests": {
+        "passed": 5627,
+        "failed": 0,
+        "skipped": 5,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-OVERNIGHT-SCHEDULE-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "6b202b1eeeaa697386626de83eb9c8bf02bb0441",
+      "landed_at": "2026-09-02T17:13:45-05:00",
+      "tests": {
+        "passed": 22,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-OVERNIGHT-SCHEDULE-2",
+      "repo": "",
+      "status": "HALT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-OVERNIGHT-SCHEDULE-2",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "fd54eda8366894830aca193e32de594adaa0e362",
+      "landed_at": "2026-09-02T23:01:59-05:00",
+      "tests": {
+        "passed": 36,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    }
+  ],
+  "corrections": [],
+  "notes": [
+    "tokens_in/tokens_out/cost_usd are null: no per-dispatch telemetry is captured on this machine; never estimated."
+  ],
+  "prev_hash": "5a867c8f62f1df977967d1dfae76306ba740cef39cf38b2f1e9b782f425370c7",
+  "hash": "9a22694e9dc1867cd4bf5a40d94b18b1405539ae7e2259367eecad55d1830c0d"
+}

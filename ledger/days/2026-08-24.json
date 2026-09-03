@@ -1,0 +1,24 @@
+{
+  "date": "2026-08-24",
+  "source": "backfill",
+  "dispatches": [],
+  "corrections": [
+    {
+      "id": "2026-08-24-suite",
+      "date": "2026-08-24",
+      "class": "metric-drift",
+      "settled": false,
+      "title": "a test-count gap between two repos, open for verification"
+    },
+    {
+      "id": "2026-08-24-view",
+      "date": "2026-08-24",
+      "class": "other",
+      "settled": false,
+      "title": "a status node contradicting itself, flagged and still open"
+    }
+  ],
+  "notes": [],
+  "prev_hash": "27560414aef505da38e8a2c26f81ba6ca9d3c1c181b4d83f5cbb17d015b23077",
+  "hash": "8cda33fcfbb08f2bcd712147cbcb52bffbce98ea87ffc3783c278246fbd07bcd"
+}

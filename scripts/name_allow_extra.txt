@@ -1,0 +1,56 @@
+# Reviewed non-name tokens (SHAYKEPUBLIC-BUILD-1 T7).
+#
+# Every token below is a capitalised token that legitimately appears in the
+# published content and was reviewed by hand: none names a person, company,
+# product or customer. The core allowlist in scan_names.py stays exact and
+# small; this file is the audited overflow. One token per line; '#' comments.
+
+# --- README diagram: role, department and law-label words (not names) ---
+Founder
+Chief
+Orchestrator
+Product
+Engineering
+Research
+Ops
+Finance
+SCORE
+BLIND
+AUTHOR
+FIREWALL
+LAUNCH
+RULE
+TD          # mermaid flowchart direction (top-down)
+DEMO        # the demo-capture placeholder comment in the README
+
+# --- protocol / rule-name words in the docs (not names) ---
+OAuth       # the authorisation protocol
+API         # application programming interface
+Evidence    # in "Evidence Rule", the product's grounding rule
+Rule        # in "Evidence Rule"
+
+# --- common capitalised English tokens (pronoun, acronyms) ---
+I
+I'd
+I'm
+I've
+AI
+LLM
+March       # a month, in the quotable_span usage example
+
+# --- code / filename references appearing in prose ---
+EVAL_RESULTS   # the results file quotable_span writes
+Verdict        # the quotable_span class, shown in the usage code example
+False          # a Python literal shown in a code example
+True           # a Python literal
+The            # article; appears mid-line inside code-example strings
+No             # negation at a sentence start after bold markup
+
+# --- badge / host domains in the verbatim README ---
+img.shields.io             # the badge-rendering host
+raw.githubusercontent.com  # GitHub's raw-content host, for the badge endpoints
+
+# --- invented eval-fixture tokens (quotable_span/eval/cases.json) ---
+ON
+TOTAL
+DUE

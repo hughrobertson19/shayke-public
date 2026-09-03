@@ -1,0 +1,27 @@
+{
+  "date": "2026-08-13",
+  "source": "backfill",
+  "dispatches": [
+    {
+      "id": "AIHUGH-MODEL-TIER-BIND-1",
+      "repo": "ai-hugh",
+      "status": "DEAD_NO_REPORT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    }
+  ],
+  "corrections": [],
+  "notes": [],
+  "prev_hash": "e0f1751a5d56cf0c26d93f18db58fbd914e635702e88fe1df647636d9d3025d6",
+  "hash": "a948ddeab95eeec9593288d7ca529d0d25dda35a358e97fa84a06606e9ee9d9a"
+}
