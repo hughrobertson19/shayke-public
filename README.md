@@ -1,6 +1,6 @@
 # shayke-public
 
-An agent fleet that builds a sales product overnight and publishes its own build ledger. Every landing, halt, correction and dollar, hash chained daily. Built by one person for enterprise sales reps who are tired of feeding a CRM by hand.
+An agent fleet that builds a sales product overnight and publishes its own build ledger. Every landing, halt and correction, hash chained daily. Built by one person for enterprise sales reps who are tired of feeding a CRM by hand.
 
 ![last build](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hughrobertson19/shayke-public/main/ledger/badges/last_build.json)
 ![tests at last run](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hughrobertson19/shayke-public/main/ledger/badges/tests.json)
@@ -40,7 +40,7 @@ I came to this from selling, not from engineering. Five months in enterprise sal
 
 This is the public window onto a private system. The product and the fleet that builds it live in private repos. Claims about those repos can't be verified from this page, and I've written this so you don't have to take them on faith where I can show you instead.
 
-**`ledger/`** is the honest bit. Every day a script reads the committed dispatch reports from the private repos and writes one JSON record here: which build dispatches landed, which halted, which died without a report, the test count stamped by the run that produced it, the eval verdict per build (GREEN, RED or UNKNOWN), and tokens and cost per run. Each day's record hashes the previous one, so the history can't be quietly edited. The corrections ledger is in there too. Those are my own mistakes, classed by type, marked settled or open. Halts and corrections are published on purpose. A green wall tells you nothing. Entries before the ledger went live were backfilled from committed reports and are marked as such.
+**`ledger/`** is the honest bit. Every day a script reads the committed dispatch reports from the private repos and writes one JSON record here: which build dispatches landed, which halted, which died without a report, the test count stamped by the run that produced it, the eval verdict per build (GREEN, RED or UNKNOWN), and tokens and cost per run once the runner can attribute them to a dispatch (until then those fields are null, never estimated). Each day's record hashes the previous one, so the history can't be quietly edited. The corrections ledger is in there too. Those are my own mistakes, classed by type, marked settled or open. Halts and corrections are published on purpose. A green wall tells you nothing. Entries before the ledger went live were backfilled from committed reports and are marked as such.
 
 **`fleet/census.json`** lists every agent: name, department, model tier, cadence, and two separate status fields, registered and running. They're separate because conflating them is how fleets get oversold.
 
