@@ -6,6 +6,20 @@ One record per day of activity, hash chained. Landings, halts, deaths, correctio
 
 | date | dispatch | repo | status | tests (p/f/s) | eval | cost |
 | --- | --- | --- | --- | --- | --- | --- |
+| 2026-09-05 | PEAKOPS-ARCHITECT-3 | — | HALT | — | UNKNOWN | — |
+| 2026-09-05 | PEAKOPS-BRIEFING-SELFCHECK-2 | — | HALT | — | UNKNOWN | — |
+| 2026-09-05 | PEAKOPS-LANES-1 | — | HALT | — | UNKNOWN | — |
+| 2026-09-05 | PEAKOPS-OVERNIGHT-SCHEDULE-3 | — | HALT | — | UNKNOWN | — |
+| 2026-09-05 | PEAKOPS-REVIEWER-1 | — | HALT | — | UNKNOWN | — |
+| 2026-09-04 | AIHUGH-MERGE-READY-BAR-PLAN-1 | ai-hugh | LANDED | 10324/0/12 | UNKNOWN | — |
+| 2026-09-04 | PEAKOPS-ARCHITECT-3 | — | HALT | — | UNKNOWN | — |
+| 2026-09-04 | PEAKOPS-BRIEFING-SELFCHECK-2 | — | HALT | — | UNKNOWN | — |
+| 2026-09-04 | PEAKOPS-CHAIN-PREP-1 | peak-ops | LANDED | 1/?/? | UNKNOWN | — |
+| 2026-09-04 | PEAKOPS-LANES-1 | — | HALT | — | UNKNOWN | — |
+| 2026-09-04 | PEAKOPS-OVERNIGHT-SCHEDULE-3 | — | HALT | — | UNKNOWN | — |
+| 2026-09-04 | PEAKOPS-REVIEWER-1 | — | HALT | — | UNKNOWN | — |
+| 2026-09-04 | PEAKOPS-SEQUENCING-2 | peak-ops | LANDED | — | UNKNOWN | — |
+| 2026-09-04 | PEAKOPS-TEST-ISOLATION-1 | peak-ops | LANDED | — | UNKNOWN | — |
 | 2026-09-03 | PEAKOPS-ARCHITECT-3 | — | HALT | — | UNKNOWN | — |
 | 2026-09-02 | AIHUGH-BASELINE-REFRESH-1 | ai-hugh | LANDED | 45/0/2 | UNKNOWN | — |
 | 2026-09-02 | PEAKOPS-AGENT-PIPELINE-1 | peak-ops | LANDED | 5666/0/? | UNKNOWN | — |

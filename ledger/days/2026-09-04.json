@@ -1,0 +1,165 @@
+{
+  "date": "2026-09-04",
+  "source": "backfill",
+  "dispatches": [
+    {
+      "id": "AIHUGH-MERGE-READY-BAR-PLAN-1",
+      "repo": "ai-hugh",
+      "status": "LANDED",
+      "landed_commit": "50a630fb436a4fff3da606cc175e2f23fcd6f52e",
+      "landed_at": "2026-09-04T11:56:32-05:00",
+      "tests": {
+        "passed": 10324,
+        "failed": 0,
+        "skipped": 12,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-ARCHITECT-3",
+      "repo": "",
+      "status": "HALT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-BRIEFING-SELFCHECK-2",
+      "repo": "",
+      "status": "HALT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-CHAIN-PREP-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "c62378b7e26e32f42ff57372845617ba7d6bc7f7",
+      "landed_at": "2026-09-04T19:51:50-05:00",
+      "tests": {
+        "passed": 1,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-LANES-1",
+      "repo": "",
+      "status": "HALT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-OVERNIGHT-SCHEDULE-3",
+      "repo": "",
+      "status": "HALT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-REVIEWER-1",
+      "repo": "",
+      "status": "HALT",
+      "landed_commit": "",
+      "landed_at": "",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-SEQUENCING-2",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "bacfcd8b77ac4a79c618cd96d854bf77c504d549",
+      "landed_at": "2026-09-04T04:39:48-05:00",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    },
+    {
+      "id": "PEAKOPS-TEST-ISOLATION-1",
+      "repo": "peak-ops",
+      "status": "LANDED",
+      "landed_commit": "35f498a24386559bb289bce3e46adb08238b080f",
+      "landed_at": "2026-09-04T04:39:55-05:00",
+      "tests": {
+        "passed": null,
+        "failed": null,
+        "skipped": null,
+        "run_at": null
+      },
+      "eval_verdict": "UNKNOWN",
+      "tokens_in": null,
+      "tokens_out": null,
+      "cost_usd": null
+    }
+  ],
+  "corrections": [],
+  "notes": [
+    "tokens_in/tokens_out/cost_usd are null: no per-dispatch telemetry is captured on this machine; never estimated."
+  ],
+  "prev_hash": "3fc73014b18957e5467bc0ebf19a47cf1d4c8c3a6a81081ef0700cab75961421",
+  "hash": "824839a920bb969ad68cc4c55fdfff0459febe867f6b6f1c3685f1ea39298cee"
+}
