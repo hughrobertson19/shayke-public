@@ -15,6 +15,8 @@ Built by one person who came to this from selling, not engineering.
 ![eval verdict](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hughrobertson19/shayke-public/main/ledger/badges/eval.json)
 ![ledger days](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hughrobertson19/shayke-public/main/ledger/badges/chain.json)
 
+*Status, 8 Sep 2026: the fleet is paused — `fleet/census.json` says so (`fleet_paused: true`, `running_count: 0`) — while the judge and every other model call move off the metered API onto a fixed-cost plan. The grey badges are the consequence. They stay grey until a dated run says otherwise; nothing on this page is upgraded by hand.*
+
 <!-- DEMO: real capture of the ledger updating from a live run. If this line is still here, no capture existed at build time. -->
 
 ## Reading guide
@@ -51,15 +53,15 @@ I came to this from selling, not from engineering. Five months in enterprise sal
 
 ## What's in here, in detail
 
-This is the public window onto a private system. The product and the fleet that builds it live in private repos. Claims about those repos can't be verified from this page, and I've written this so you don't have to take them on faith where I can show you instead.
+Long form of the three folders above, plus `docs/`. The product and the fleet that builds it live in private repos; nothing below asks you to take those on faith where a file here can show you instead.
 
-**`ledger/`** is the honest bit. Every day a script reads the committed dispatch reports from the private repos and writes one JSON record here: which build dispatches landed, which halted, which died without a report, the test count stamped by the run that produced it, the eval verdict per build (GREEN, RED or UNKNOWN), and tokens and cost per run once the runner can attribute them to a dispatch (until then those fields are null, never estimated). Each day's record hashes the previous one, so the history can't be quietly edited. The corrections ledger is in there too. Those are my own mistakes, classed by type, marked settled or open. Halts and corrections are published on purpose. A green wall tells you nothing. Entries before the ledger went live were backfilled from committed reports and are marked as such.
+**`ledger/`** — every day a script reads the committed dispatch reports from the private repos and writes one JSON record: which build dispatches landed, which halted, which died without a report, the test count stamped by the run that produced it, the eval verdict per build (GREEN, RED or UNKNOWN), and tokens and cost per run once the runner can attribute them to a dispatch (until then those fields are null, never estimated). Each day's record hashes the previous one, so the history can't be quietly edited. The corrections file is my own mistakes, classed by type, marked settled or open. Halts and corrections are published on purpose: a green wall tells you nothing. Entries before the ledger went live were backfilled from committed reports and are marked as such.
 
-**`fleet/census.json`** lists every agent: name, department, model tier, cadence, and two separate status fields, registered and running. They're separate because conflating them is how fleets get oversold.
+**`fleet/census.json`** — name, department, model tier, cadence, and the two status fields per agent.
 
-**`lib/quotable_span/`** is the one piece of runnable code, MIT licensed. It's an LLM as judge check with one rule: the grader has to quote the exact words behind its verdict, and that quote has to appear character for character in the graded text, or the verdict is VOID. It proves the quote is real, not that it's relevant, and human agreement is under measured. The README in that folder says so plainly and shows its own eval results, wrong cases included.
+**`lib/quotable_span/`** — the check, its tests and its eval results, wrong cases included. The folder README states the limits plainly: it proves the quote is real, not that it's relevant, and human agreement is under measured.
 
-**`docs/`** holds the things a customer's engineers would ask for before a pilot: a pilot runbook, a data flow document, the product's success metric and why the volume metrics were rejected, and a summary of what broke when adversarial personas used the product.
+**`docs/`** — what a customer's engineers would ask for before a pilot: a pilot runbook, a data flow document, the product's success metric and why the volume metrics were rejected, and a summary of what broke when adversarial personas used the product.
 
 ## What I can say about the private side
 
