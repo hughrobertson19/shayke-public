@@ -1,6 +1,14 @@
-# shayke-public
+# Shayke
 
-An agent fleet that builds a sales product overnight and publishes its own build ledger. Every landing, halt and correction, hash chained daily. Built by one person for enterprise sales reps who are tired of feeding a CRM by hand.
+**A Sales Execution Cockpit: the one app a field seller needs to do all of their sales admin, with coaching built in.** Chat-first, phone-first. The seller talks; the system drafts, updates the CRM with proof, preps the meeting and coaches off the recorded call. It never runs the call.
+
+This repo is the public window onto a private product and the agent fleet that builds it. Three things you can check in under a minute:
+
+1. **`lib/quotable_span/`** — runnable, MIT. One rule for an LLM grading another: the grader must quote the exact words behind its verdict, and the quote must appear character for character in the graded text or the verdict is VOID. Its own eval results are in the folder, wrong cases included.
+2. **`ledger/`** — a daily, hash-chained build ledger written from the private repos' committed dispatch reports: what landed, what halted, what died without a report, and my own corrections classed by type. Grey badges mean unknown, and are published as unknown.
+3. **`fleet/census.json`** — every agent, with `registered` and `running` as separate fields, because conflating them is how fleets get oversold.
+
+Built by one person who came to this from selling, not engineering.
 
 ![last build](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hughrobertson19/shayke-public/main/ledger/badges/last_build.json)
 ![tests at last run](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hughrobertson19/shayke-public/main/ledger/badges/tests.json)
@@ -8,7 +16,12 @@ An agent fleet that builds a sales product overnight and publishes its own build
 ![ledger days](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hughrobertson19/shayke-public/main/ledger/badges/chain.json)
 
 <!-- DEMO: real capture of the ledger updating from a live run. If this line is still here, no capture existed at build time. -->
-![demo](docs/demo.gif)
+
+## Reading guide
+
+- **Assessing the engineering** (evals, agent systems, guarded writes): `lib/quotable_span/` first, then `docs/` for the adversarial-persona summary and the data-flow document, then `ledger/` for the corrections record.
+- **Assessing the product**: `docs/` — the pilot runbook and the success metric, including why the volume metrics were rejected.
+- **Checking a claim on this page**: every claim below names the file that backs it, or is worded to the limit of what the private evidence supports.
 
 ## How it's wired
 
@@ -36,7 +49,7 @@ flowchart TD
 
 I came to this from selling, not from engineering. Five months in enterprise sales and a year in a smaller sales role before that. Not long, but long enough to learn where the job actually goes wrong. It was never the selling. It was the hours after, turning messy calls and half remembered promises into CRM fields nobody trusted anyway. Every tool that promised to fix it either made things up or needed a data team to run. I wanted the version that gets it right, proves it got it right, and stays out of the way. Shayke is that, and this repo is the part of it I can show.
 
-## What's actually in here
+## What's in here, in detail
 
 This is the public window onto a private system. The product and the fleet that builds it live in private repos. Claims about those repos can't be verified from this page, and I've written this so you don't have to take them on faith where I can show you instead.
 
@@ -53,7 +66,7 @@ This is the public window onto a private system. The product and the fleet that 
 These are the claims I'm prepared to stand behind, worded as tightly as the evidence allows:
 
 - Guarded Salesforce writes proven live against a Dev org, field compared, audit logged with per field provenance.
-- The eval harness runs green in CI with live scoring.
+- Our own checks run hermetic in CI; live gates run on the founder's machine and publish to the ledger in this repo. The eval badge above reads UNKNOWN until a dated live-judge artefact exists — it is not upgraded by hand.
 - One AI grades another; the grader must quote the exact words behind its verdict and the quote must appear character for character in what was graded or the pass voids. It enforces that the quote is real, not that it's relevant; human agreement is under measured.
 - Our adversarial harness caught a confidently reported fix and blocked release before any customer saw the product.
 - Artefacts can lie without anyone lying; doc stated counts are stale by default unless machine checked.
