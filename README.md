@@ -4,9 +4,9 @@
 
 This repo is the public window onto a private product and the agent fleet that builds it. Three things you can check in under a minute:
 
-1. **`lib/quotable_span/`** — runnable, MIT. One rule for an LLM grading another: the grader must quote the exact words behind its verdict, and the quote must appear character for character in the graded text or the verdict is VOID. Its own eval results are in the folder, wrong cases included.
-2. **`ledger/`** — a daily, hash-chained build ledger written from the private repos' committed dispatch reports: what landed, what halted, what died without a report, and my own corrections classed by type. Grey badges mean unknown, and are published as unknown.
-3. **`fleet/census.json`** — every agent, with `registered` and `running` as separate fields, because conflating them is how fleets get oversold.
+1. **`lib/quotable_span/`**: runnable, MIT. One rule for an LLM grading another: the grader must quote the exact words behind its verdict, and the quote must appear character for character in the graded text or the verdict is VOID. Its own eval results are in the folder, wrong cases included.
+2. **`ledger/`**: a daily, hash chained build ledger written from the private repos' committed dispatch reports: what landed, what halted, what died without a report, and my own corrections classed by type. Grey badges mean unknown, and are published as unknown.
+3. **`fleet/census.json`**: every agent, with `registered` and `running` as separate fields, because conflating them is how fleets get oversold.
 
 Built by one person who came to this from selling, not engineering.
 
@@ -15,14 +15,14 @@ Built by one person who came to this from selling, not engineering.
 ![eval verdict](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hughrobertson19/shayke-public/main/ledger/badges/eval.json)
 ![ledger days](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hughrobertson19/shayke-public/main/ledger/badges/chain.json)
 
-*Status, 8 Sep 2026: the fleet is paused — `fleet/census.json` says so (`fleet_paused: true`, `running_count: 0`) — while the judge and every other model call move off the metered API onto a fixed-cost plan. The grey badges are the consequence. They stay grey until a dated run says otherwise; nothing on this page is upgraded by hand.*
+*Status, 8 Sep 2026: the fleet is paused. `fleet/census.json` says so (`fleet_paused: true`, `running_count: 0`). It stays paused while the judge and every other model call move off the metered API onto a fixed-cost plan. The grey badges are the consequence. They stay grey until a dated run says otherwise; nothing on this page is upgraded by hand.*
 
 <!-- DEMO: real capture of the ledger updating from a live run. If this line is still here, no capture existed at build time. -->
 
 ## Reading guide
 
 - **Assessing the engineering** (evals, agent systems, guarded writes): `lib/quotable_span/` first, then `docs/` for the adversarial-persona summary and the data-flow document, then `ledger/` for the corrections record.
-- **Assessing the product**: `docs/` — the pilot runbook and the success metric, including why the volume metrics were rejected.
+- **Assessing the product**: `docs/`, the pilot runbook and the success metric, including why the volume metrics were rejected.
 - **Checking a claim on this page**: every claim below names the file that backs it, or is worded to the limit of what the private evidence supports.
 
 ## How it's wired
@@ -49,26 +49,30 @@ flowchart TD
 
 ## Why I built this
 
-I came to this from selling, not from engineering. Five months in enterprise sales and a year in a smaller sales role before that. Not long, but long enough to learn where the job actually goes wrong. It was never the selling. It was the hours after, turning messy calls and half remembered promises into CRM fields nobody trusted anyway. Every tool that promised to fix it either made things up or needed a data team to run. I wanted the version that gets it right, proves it got it right, and stays out of the way. Shayke is that, and this repo is the part of it I can show.
+I came to this from selling, not engineering. I was doing outside sales for a start up, on the road most days, and the part of the job that kept failing was never the selling. It was keeping up. Visits went in late or not at all because I was never at a desk, and the detail from a good conversation had fallen through the cracks by the time I got to one. I'd already built a small AI assistant for the reps I worked with, so I knew what actually helped and what just made things up.
+
+Before sales I played Division I football at Illinois and spent seven years as a police officer. Football taught me that a schedule is a promise you keep to a team. Policing was seven years of deciding under pressure with incomplete information and standing behind the decision afterwards. Both are in this product. It holds the seller to a plan, and it is built to never state something it can't show the evidence for.
+
+One line it will never cross: it does not replace the seller. People buy from people. Shayke does the admin, the prep and the coaching so the seller can spend their time on the human part.
 
 ## What's in here, in detail
 
 Long form of the three folders above, plus `docs/`. The product and the fleet that builds it live in private repos; nothing below asks you to take those on faith where a file here can show you instead.
 
-**`ledger/`** — every day a script reads the committed dispatch reports from the private repos and writes one JSON record: which build dispatches landed, which halted, which died without a report, the test count stamped by the run that produced it, the eval verdict per build (GREEN, RED or UNKNOWN), and tokens and cost per run once the runner can attribute them to a dispatch (until then those fields are null, never estimated). Each day's record hashes the previous one, so the history can't be quietly edited. The corrections file is my own mistakes, classed by type, marked settled or open. Halts and corrections are published on purpose: a green wall tells you nothing. Entries before the ledger went live were backfilled from committed reports and are marked as such.
+**`ledger/`**: every day a script reads the committed dispatch reports from the private repos and writes one JSON record: which build dispatches landed, which halted, which died without a report, the test count stamped by the run that produced it, the eval verdict per build (GREEN, RED or UNKNOWN), and tokens and cost per run once the runner can attribute them to a dispatch (until then those fields are null, never estimated). Each day's record hashes the previous one, so the history can't be quietly edited. The corrections file is my own mistakes, classed by type, marked settled or open. Halts and corrections are published on purpose: a green wall tells you nothing. Entries before the ledger went live were backfilled from committed reports and are marked as such.
 
-**`fleet/census.json`** — name, department, model tier, cadence, and the two status fields per agent.
+**`fleet/census.json`**: name, department, model tier, cadence, and the two status fields per agent.
 
-**`lib/quotable_span/`** — the check, its tests and its eval results, wrong cases included. The folder README states the limits plainly: it proves the quote is real, not that it's relevant, and human agreement is under measured.
+**`lib/quotable_span/`**: the check, its tests and its eval results, wrong cases included. The folder README states the limits plainly: it proves the quote is real, not that it's relevant, and human agreement is under measured.
 
-**`docs/`** — what a customer's engineers would ask for before a pilot: a pilot runbook, a data flow document, the product's success metric and why the volume metrics were rejected, and a summary of what broke when adversarial personas used the product.
+**`docs/`**: what a customer's engineers would ask for before a pilot: a pilot runbook, a data flow document, the product's success metric and why the volume metrics were rejected, and a summary of what broke when adversarial personas used the product.
 
 ## What I can say about the private side
 
 These are the claims I'm prepared to stand behind, worded as tightly as the evidence allows:
 
 - Guarded Salesforce writes proven live against a Dev org, field compared, audit logged with per field provenance.
-- Our own checks run hermetic in CI; live gates run on the founder's machine and publish to the ledger in this repo. The eval badge above reads UNKNOWN until a dated live-judge artefact exists — it is not upgraded by hand.
+- Our own checks run hermetic in CI; live gates run on the founder's machine and publish to the ledger in this repo. The eval badge above reads UNKNOWN until a dated live judge artefact exists. It is not upgraded by hand.
 - One AI grades another; the grader must quote the exact words behind its verdict and the quote must appear character for character in what was graded or the pass voids. It enforces that the quote is real, not that it's relevant; human agreement is under measured.
 - Our adversarial harness caught a confidently reported fix and blocked release before any customer saw the product.
 - Artefacts can lie without anyone lying; doc stated counts are stale by default unless machine checked.
