@@ -2,7 +2,7 @@
 
 **A Sales Execution Cockpit: the one app a field seller needs to do all of their sales admin, with coaching built in.** Chat-first, phone-first. The seller talks; the system drafts, updates the CRM with proof, preps the meeting and coaches off the recorded call. It never runs the call.
 
-This repo is the public window onto a private product and the agent fleet that builds it. Three things you can check in under a minute:
+This repo is the public window onto Shayke, an applied learning project, and the AI agents I use to build it. Three things you can check in under a minute:
 
 1. **`lib/quotable_span/`**: runnable, MIT. One rule for an LLM grading another: the grader must quote the exact words behind its verdict, and the quote must appear character for character in the graded text or the verdict is VOID. Its own eval results are in the folder, wrong cases included.
 2. **`ledger/`**: a daily, hash chained build ledger written from the private repos' committed dispatch reports: what landed, what halted, what died without a report, and my own corrections classed by type. Grey badges mean unknown, and are published as unknown.
@@ -65,18 +65,17 @@ Long form of the three folders above, plus `docs/`. The product and the fleet th
 
 **`lib/quotable_span/`**: the check, its tests and its eval results, wrong cases included. The folder README states the limits plainly: it proves the quote is real, not that it's relevant, and human agreement is under measured.
 
-**`docs/`**: what a customer's engineers would ask for before a pilot: a pilot runbook, a data flow document, the product's success metric and why the volume metrics were rejected, and a summary of what broke when adversarial personas used the product.
+**`docs/`**: practice versions of what a customer's engineers would ask for before a pilot: a pilot runbook, a data flow document, the product's success metric and why the volume metrics were rejected, and a summary of what broke when adversarial personas used the product.
 
 ## What I can say about the private side
 
 These are the claims I'm prepared to stand behind, worded as tightly as the evidence allows:
 
 - Guarded Salesforce writes proven live against a Dev org, field compared, audit logged with per field provenance.
-- Our own checks run hermetic in CI; live gates run on the founder's machine and publish to the ledger in this repo. The eval badge above reads UNKNOWN until a dated live judge artefact exists. It is not upgraded by hand.
+- Our own checks run hermetic in CI; live gates run on my machine and publish to the ledger in this repo. The eval badge above reads UNKNOWN until a dated live judge artefact exists. It is not upgraded by hand.
 - One AI grades another; the grader must quote the exact words behind its verdict and the quote must appear character for character in what was graded or the pass voids. It enforces that the quote is real, not that it's relevant; human agreement is under measured.
-- Our adversarial harness caught a confidently reported fix and blocked release before any customer saw the product.
+- My adversarial harness caught a confidently reported fix and blocked it before release.
 - Artefacts can lie without anyone lying; doc stated counts are stale by default unless machine checked.
-- Encryption at rest: per user AES 256 GCM default for new writes, legacy read fallback enabled.
 
 No customers yet. I use it myself. The fleet runs on one machine with hard per run token caps and a spend breaker, and I'd rather tell you that than let you guess.
 
