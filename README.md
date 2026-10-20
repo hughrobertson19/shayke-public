@@ -15,6 +15,8 @@ Built by one person who came to this from selling, not engineering.
 ![eval verdict](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hughrobertson19/shayke-public/main/ledger/badges/eval.json)
 ![ledger days](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/hughrobertson19/shayke-public/main/ledger/badges/chain.json)
 
+*Status, 20 Oct 2026: the agent fleet is still paused, so the badges stay grey. The nightly evaluator runs separately; its latest run passed 19 of 19 scenarios on hard checks (20 Oct 2026). See aihugh.org.*
+
 *Status, 8 Sep 2026: the fleet is paused. `fleet/census.json` says so (`fleet_paused: true`, `running_count: 0`). It stays paused while the judge and every other model call move off the metered API onto a fixed-cost plan. The grey badges are the consequence. They stay grey until a dated run says otherwise; nothing on this page is upgraded by hand.*
 
 <!-- DEMO: real capture of the ledger updating from a live run. If this line is still here, no capture existed at build time. -->
